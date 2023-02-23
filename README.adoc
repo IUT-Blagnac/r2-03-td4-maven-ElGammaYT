@@ -77,7 +77,7 @@ Par exemple :
 .Erreur de compilation
 image::error1.png["Erreur de compilation", width=80%]
 +
-. Corrigez le code en conséquence.
+. Corrigez le code en conséquence. => Ajout de `void`
 +
 .Erreur corrigée
 image::success1.png["Erreur éliminée", width=80%]
@@ -125,6 +125,7 @@ image::success2.png["Ca run!", width=80%]
 . Ajustez éventuellement le `pom.xml` pour que les étapes précédentes produisent les résultats escomptés. Pensez à vérifier que votre fichier .jar est exécutable. Que devez-vous corriger dans votre pom.xml ? Quelle est la commande pour le lancer ?
 . Ajoutez les commentaires vus en dev.
 . Cherchez dans la documentation {maven} les commandes permettant de générer une documentation javadoc, et les adaptions à faire sur votre projet (et éventuellement `pom.xml`) afin que {maven} génère la documentation automatiquement pour vous.
+`mvn javadoc:javadoc`
 . Documentez votre projet: remplacez le contenu de ce fichier README.doc par les instructions de compilation, de documentation et de lancement de votre projet. 
 
 == Consignes et rendus
